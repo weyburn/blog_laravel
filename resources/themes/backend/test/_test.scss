@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.body-test-index {
+    header {
+        // 媒体查询(原生HTML)
+        // Extra small devices (portrait phones, less than 576px)
+        @media (max-width: 575.99px) {
+            background: firebrick;
+        }
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) and (max-width: 767.99px) {
+            background: forestgreen;
+        }
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) and (max-width: 991.99px) {
+            background: royalblue;
+        }
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) and (max-width: 1199.99px) {
+            background: peru;
+        }
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            background: darkcyan;
+        }
+    }
+    .main {
+        // Bootstrap 4（SCSS) 可以这样写的
+        @include media-breakpoint-only(xs) {
+            background: lightpink;
+        }
+        @include media-breakpoint-only(sm) {
+            background: lightgreen;
+        }
+        @include media-breakpoint-only(md) {
+            background: lightblue;
+        }
+        @include media-breakpoint-only(lg) {
+            background: lightgoldenrodyellow;
+        }
+        @include media-breakpoint-only(xl) {
+            background: lightseagreen;
+        }
+    }
+}
+
+
+
