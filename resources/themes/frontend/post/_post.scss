@@ -93,6 +93,8 @@
         a:not(.link) {
             border-bottom: 1px solid #888;
             padding-bottom: 1px;
+            word-break: break-all;
+            word-wrap: break-word;
             &:hover {
                 border-color: #222;
             }
@@ -110,6 +112,7 @@
             border-bottom: 1px dotted #888;
             padding: 4px;
             margin: 4px 8px;
+            word-wrap: break-word;
             i {
                 font-size: inherit;
                 margin-right: 4px;

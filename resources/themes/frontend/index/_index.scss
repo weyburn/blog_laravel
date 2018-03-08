@@ -112,6 +112,8 @@
         a:not(.link) {
             border-bottom: 1px solid #888;
             padding-bottom: 1px;
+            word-break: break-all;
+            word-wrap: break-word;
             &:hover {
                 border-color: #222;
             }
